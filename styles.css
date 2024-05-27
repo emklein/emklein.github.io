@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  height: 100%;
+  background-color: #F6BD8D;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -6,44 +17,46 @@ img {
   padding-top: 50px;
 }
 
-.toppage {
-  background-image: url('images/mainbackground2.png');
-  background-size: cover;
-}
-
 h1, h2, h3 {
   font-family: "Courier New",Courier,monospace;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0em;
   text-transform: none;
+  text-align: center;
 }
 
 h1 {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   padding-left: 75px;
   color: #fff;
-  line-height: 1.0992;
   font-size: calc((3.1 - 1) * 1.2vw + 1rem);
 }
 
 h2 {
-  line-height: 1.1136;
   font-size: calc((2.8 - 1) * 1.2vw + 1rem);
-  display: block;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+.toppage {
+  background-color: #A2AD85;
 }
 
 .bio {
-  background-color: black;
+  background-color: #A2B2B9;
   color: #fff;
   text-align: center;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.sayhello {
+  background-color: #F6BD8D;
+  color: #fff;
+  text-align: center;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: 100%;
 }
 
 p {
@@ -52,24 +65,49 @@ p {
   font-style: normal;
   letter-spacing: 0em;
   text-transform: none;
-  line-height: 1.7;
   font-size: calc((1 - 1) * 1.2vw + 1rem);
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 b {
   font-weight: bold;
 }
 
-.sayhello {
-  background-color: #fff;
-  text-align: center;
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
 }
 
-body {
-  margin: 0;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
